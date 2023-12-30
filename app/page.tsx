@@ -3,6 +3,7 @@ import SocialButton from "@/components/SocialButton";
 import LinkedIn from "../public/linkedin.svg";
 import ProjectPreview from "@/components/ProjectPreview";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -59,6 +60,8 @@ export default function Home() {
           dark
         />
       </section>
+
+      <Footer />
     </>
   );
 }
