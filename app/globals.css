@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply max-w-[90%] w-[1080px] mx-auto;
+}
+
+.main-body {
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(#1c907f),
+    to(#23579d)
+  );
+  background: linear-gradient(180deg, #1c907f 0%, #23579d 100%);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: #eeeeee;
+  border-radius: 5%;
+}
