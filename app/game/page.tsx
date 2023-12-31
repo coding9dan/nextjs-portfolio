@@ -31,10 +31,7 @@ const Game = () => {
                 </p>
               </div>
               <div className="h-12 w-12 bg-white rounded-full flex justify-center items-center cursor-pointer">
-                <Link
-                  href="https://github.com/coding9dan/javascript-game"
-                  target="_blank"
-                >
+                <Link href="http://jsgame.us.to/" target="_blank">
                   <Arrow className="w-6 h-6" />
                 </Link>
               </div>
