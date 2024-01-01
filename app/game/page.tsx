@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Metadata } from "next/types";
 import Arrow from "../../public/arrow.svg";
 import React from "react";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Code in Life | Game",
@@ -39,6 +40,8 @@ const Game = () => {
           </div>
         </div>
       </section>
+
+      <Footer />
     </>
   );
 };
