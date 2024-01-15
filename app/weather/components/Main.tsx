@@ -56,7 +56,6 @@ const Main = () => {
             return response.json();
           })
           .then((data) => {
-            // console.log(data);
             setState((prev) => ({
               ...prev,
               isLoading: false,
@@ -85,25 +84,6 @@ const Main = () => {
     getCurrentLocation();
   }, []);
 
-  const changeUnitHandler = (temp: number, unit: string) => {
-    let celsius = (temp - 32) * (5 / 9);
-    let fahrenheit = temp * (9 / 5) + 32;
-
-    if (unit === "F") {
-      setState((prev) => ({
-        ...prev,
-        tempUnit: "C",
-        temperature: Math.round(celsius),
-      }));
-    } else if (unit === "C") {
-      setState((prev) => ({
-        ...prev,
-        tempUnit: "F",
-        temperature: Math.round(fahrenheit),
-      }));
-    }
-  };
-
   return (
     <div className="main-body flex justify-center items-center h-[80vh]">
       {state.isLoading ? (
@@ -118,8 +98,6 @@ const Main = () => {
           <Temperature
             temperature={state.temperature}
             description={state.description}
-            changeUnitHandler={changeUnitHandler}
-            tempUnit={state.tempUnit}
             feelsLike={state.feelsLike}
             humidity={state.humidity}
             tempMax={state.tempMax}
