@@ -16,7 +16,7 @@ const Footer = () => {
       </div>
       <div>
         <span className="text-gray-500" style={{ fontSize: "10px" }}>
-          Next.js 13 + TypeScript + Tailwind CSS
+          Next.js 13 + React + TypeScript + Tailwind CSS
         </span>
       </div>
     </div>
